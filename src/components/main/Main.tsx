@@ -1,6 +1,6 @@
 import React from "react";
 const Main = () => {
-  return <div></div>;
+  return <h1>Institucional</h1>;
 };
 
 export { Main };
