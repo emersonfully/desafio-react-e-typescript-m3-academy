@@ -3,7 +3,7 @@ import { Header } from "../components/header/Header";
 import { Main } from "../components/main/Main";
 import { Footer } from "../components/footer/Footer";
 
-const Home = () => {
+const FaleConosco = () => {
   return (
     <>
       <Header />
@@ -13,4 +13,4 @@ const Home = () => {
   );
 };
 
-export { Home };
+export { FaleConosco };
