@@ -1,0 +1,57 @@
+.menu__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1025px) {
+    padding: 0 100px;
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.menu__wrapper {
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+.menu__items {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    padding: 16px;
+    border-right: 1px solid black;
+    width: 302px;
+    cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      border: none;
+    }
+
+    &:hover {
+      background: black;
+      color: white;
+    }
+  }
+}
+
+.menu__description {
+  width: 100%;
+  padding: 0 16px;
+
+  h2 {
+    margin-bottom: 20px;
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+.breadgrumb__wrapper {
+  margin: 29px 100px;
+  @media screen and (max-width: 1024px) {
+    margin: 29px 16px;
+  }
+}
+.breadgrumb__ul {
+  display: flex;
+  flex-direction: row;
+
+  & a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    color: #c4c4c4;
+  }
+}
+
+.main__title {
+  text-align: center;
+  margin: 80px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #292929;
+}
