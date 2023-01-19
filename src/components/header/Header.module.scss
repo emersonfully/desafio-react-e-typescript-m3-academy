@@ -3,18 +3,51 @@ header {
 }
 
 .header__container {
-  height: 76px;
-
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
+
+  @media screen and (min-width: 1025px) {
+    padding: 25px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 16px;
+  }
 }
 
 .container__logo {
-  position: absolute;
-  left: 100px;
   width: 136px;
+
+  @media screen and (min-width: 1025px) {
+    position: absolute;
+    left: 100px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin: 26px 0;
+  }
+}
+
+.container__searchbar__wrapper {
+  position: relative;
+
+  button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: white;
+    border: none;
+  }
+
+  img {
+    width: 20px;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .container__searchbar {
@@ -23,9 +56,14 @@ header {
   height: 32px;
   border: 2px solid #f2f2f2;
   border-radius: 5px;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
-.container__cart__wrapper {
+.menu__headerTop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,16 +75,33 @@ header {
     color: white;
     text-transform: uppercase;
   }
+
+  @media screen and (max-width: 1024px) {
+    right: 16px;
+    top: 25px;
+  }
 }
 
-.cart__wrapper__icon {
+.headerTop__login {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.headerTop__cart {
   width: 30px;
-  margin-left: 55px;
+  @media screen and (min-width: 1025px) {
+    margin-left: 55px;
+  }
 }
 
 .header__container__nav {
   padding: 14px 0;
   height: 50px;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 
   .nav__wrapper {
     margin-left: 100px;
@@ -56,5 +111,68 @@ header {
     color: white;
     margin-right: 50px;
     text-transform: uppercase;
+  }
+}
+
+.button__navbar {
+  display: none;
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+    background: black;
+    border: 0;
+    position: absolute;
+    left: 16px;
+    top: 25px;
+  }
+}
+
+.mobileNavBar__container {
+  width: 90vw;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+
+  .mobileNavBar__loginWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 82px;
+    padding: 16px;
+
+    & a {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+
+      color: #ffffff;
+    }
+
+    & button {
+      background-color: black;
+      border: none;
+    }
+  }
+
+  .mobileNavBar__items {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 16px;
+
+    & a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+
+      color: #c4c4c4;
+      margin: 6px 0;
+    }
   }
 }
