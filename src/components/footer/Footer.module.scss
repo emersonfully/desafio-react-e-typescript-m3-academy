@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .newsletter__container {
   display: flex;
   align-items: center;
@@ -6,7 +8,7 @@
   // height: 104px;
 
   .newsletter__container__span {
-    color: #303030;
+    color: $color-gray;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -25,11 +27,11 @@
     height: 42px;
     padding: 15px;
     margin: 8px 8px 0 0;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $color-gray-100;
     border-radius: 4px;
 
     &::placeholder {
-      color: #c4c4c4;
+      color: $color-gray-200;
     }
 
     @media screen and (max-width: 1024px) {
@@ -39,8 +41,8 @@
   }
 
   .newsletter__submitButton {
-    background-color: black;
-    color: white;
+    background-color: $color-black;
+    color: $color-white;
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
@@ -49,7 +51,7 @@
 
     width: 126px;
     height: 42px;
-    border: 1px solid black;
+    border: 1px solid $color-black;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 
@@ -95,7 +97,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: black;
+    color: $color-black;
 
     &:hover {
       text-decoration: underline;
@@ -127,7 +129,7 @@ ul {
     padding: 10px;
     width: 100%;
     border: none;
-    background: white;
+    background: $color-white;
     display: flex;
     justify-content: space-between;
 
@@ -146,7 +148,7 @@ ul {
       line-height: 14px;
       text-transform: capitalize;
 
-      color: #303030;
+      color: $color-gray;
     }
     a:hover {
       text-decoration: underline;
@@ -161,7 +163,7 @@ ul {
 
     text-transform: uppercase;
 
-    color: #303030;
+    color: $color-gray;
   }
 }
 
@@ -179,8 +181,8 @@ ul {
 }
 
 .footer__stamps__wrapper {
-  background-color: black;
-  color: white;
+  background-color: $color-black;
+  color: $color-white;
 
   position: relative;
   display: flex;
@@ -221,7 +223,7 @@ ul {
   list-style: none;
 
   & span {
-    background-color: white;
+    background-color: $color-white;
     display: inline-block;
     height: 24px;
     margin: -5px 6px 0 0;
@@ -258,7 +260,7 @@ ul {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
-    color: white;
+    color: $color-white;
     margin-right: 10px;
   }
 

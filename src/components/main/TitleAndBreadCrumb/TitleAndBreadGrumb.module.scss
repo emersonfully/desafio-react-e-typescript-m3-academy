@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 .breadgrumb__wrapper {
   margin: 29px 100px;
   @media screen and (max-width: 1024px) {
@@ -15,7 +17,7 @@
     line-height: 14px;
     text-transform: uppercase;
 
-    color: #c4c4c4;
+    color: $color-gray;
   }
 }
 
@@ -29,5 +31,5 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: #292929;
+  color: $color-gray;
 }

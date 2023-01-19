@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 .form-wrapper {
   width: 100%;
   max-width: 720px;
@@ -18,7 +20,7 @@
   font-size: 36px;
   text-align: center;
 
-  color: #292929;
+  color: $color-gray;
 
   margin: 0 0 32px 0;
 }
@@ -50,7 +52,7 @@
   padding: 0 12px;
 
   font-size: 14px;
-  color: black;
+  color: $color-black;
 }
 
 .form-col input.invalid {
@@ -68,7 +70,7 @@
   outline: 0;
 
   font-size: 14px;
-  color: black;
+  color: $color-black;
 }
 
 .form-wrapper button {
@@ -76,13 +78,13 @@
   height: 48px;
 
   border: none;
-  background-color: #292929;
+  background-color: $color-gray;
   border-radius: 4px;
   cursor: pointer;
 
   font-size: 12px;
   text-transform: uppercase;
-  color: white;
+  color: $color-white;
 }
 
 .form-wrapper button:hover {
@@ -96,12 +98,12 @@
 }
 
 .form-checkbox-wrapper span {
-  color: red;
+  color: $color-red;
 }
 
 .form-checkbox-declaration {
   margin: 0 5px;
-  color: black !important;
+  color: $color-black !important;
   text-decoration: underline;
 }
 
@@ -109,11 +111,11 @@
   width: 100%;
   padding: 15px;
   margin-bottom: 70px;
-  background-color: black;
+  background-color: $color-black;
   border: none;
   border-radius: 25px;
 
-  color: white;
+  color: $color-white;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -128,5 +130,5 @@
   top: 14px;
 
   font-size: 12px;
-  color: red;
+  color: $color-red;
 }

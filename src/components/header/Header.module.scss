@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 header {
-  background-color: black;
+  background-color: $color-black;
 }
 
 .header__container {
@@ -38,7 +40,7 @@ header {
     position: absolute;
     top: 5px;
     right: 10px;
-    background: white;
+    background: $color-white;
     border: none;
   }
 
@@ -54,7 +56,7 @@ header {
   padding: 8px 16px;
   width: 264px;
   height: 32px;
-  border: 2px solid #f2f2f2;
+  border: 2px solid $color-white-100;
   border-radius: 5px;
 
   @media screen and (max-width: 1024px) {
@@ -72,7 +74,7 @@ header {
   right: 100px;
 
   & a {
-    color: white;
+    color: $color-white;
     text-transform: uppercase;
   }
 
@@ -108,7 +110,7 @@ header {
   }
 
   & a {
-    color: white;
+    color: $color-white;
     margin-right: 50px;
     text-transform: uppercase;
   }
@@ -119,7 +121,7 @@ header {
 
   @media screen and (max-width: 1024px) {
     display: block;
-    background: black;
+    background: $color-black;
     border: 0;
     position: absolute;
     left: 16px;
@@ -133,13 +135,13 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background: white;
+  background: $color-white;
 
   .mobileNavBar__loginWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: $color-black;
     height: 82px;
     padding: 16px;
 
@@ -150,11 +152,11 @@ header {
       line-height: 16px;
       text-transform: uppercase;
 
-      color: #ffffff;
+      color: $color-white;
     }
 
     & button {
-      background-color: black;
+      background-color: $color-black;
       border: none;
     }
   }
@@ -171,7 +173,7 @@ header {
       line-height: 16px;
       text-transform: uppercase;
 
-      color: #c4c4c4;
+      color: $color-gray-200;
       margin: 6px 0;
     }
   }
