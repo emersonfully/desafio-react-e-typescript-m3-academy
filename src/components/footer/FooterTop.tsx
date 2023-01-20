@@ -31,9 +31,9 @@ const FooterTop = () => {
       </div>
       <div className={style.wrapper__about}>
         <span>Fale conosco</span>
-        <p>Atendimento ao consumidor</p>
+        <span>Atendimento ao consumidor</span>
         <a href="/">(11) 4159-9504</a>
-        <p>Atendimento online</p>
+        <span>Atendimento online</span>
         <a href="/">(11) 99433-8825</a>
       </div>
 

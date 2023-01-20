@@ -12,6 +12,7 @@ interface IFormikValues {
   message: string;
   birthdate: string;
   instagram: string;
+  cpf: string;
 }
 
 const initialValues = {
@@ -21,6 +22,7 @@ const initialValues = {
   message: "",
   birthdate: "",
   instagram: "",
+  cpf: "",
 };
 
 const CustomForm = () => {
@@ -60,6 +62,21 @@ const CustomForm = () => {
             <ErrorMessage
               component="span"
               name="email"
+              className="form-invalid-feedback"
+            />
+          </div>
+
+          <div className="form-col">
+            <label htmlFor="cpf">CPF</label>
+            <Field
+              id="cpf"
+              name="cpf"
+              className={errors.cpf && touched.cpf && "invalid"}
+              placeholder="999.999.999-99"
+            />
+            <ErrorMessage
+              component="span"
+              name="cpf"
               className="form-invalid-feedback"
             />
           </div>

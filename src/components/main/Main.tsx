@@ -1,8 +1,10 @@
 import React from "react";
-import { CustomForm } from "./Form/CustomForm";
 import style from "./Main.module.scss";
+
+import { CustomForm } from "./Form/CustomForm";
 import { BreadCrumb } from "./TitleAndBreadCrumb/BreadCrumb";
 import { Title } from "./TitleAndBreadCrumb/Title";
+
 const Main = () => {
   return (
     <main className={style.main__wrapper}>
