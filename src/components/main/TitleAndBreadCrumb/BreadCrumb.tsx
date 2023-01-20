@@ -9,11 +9,11 @@ const BreadCrumb = () => {
       <ul className={style.breadgrumb__ul}>
         <li>
           <a href="/">
-            <img src={Home} alt="" />
+            <img className={style.homeButton} src={Home} alt="" />
           </a>
         </li>
         <li>
-          <img src={ArromRight} alt="" />
+          <img className={style.arrowRight} src={ArromRight} alt="" />
         </li>
         <li>
           <a href="/">Institucional</a>

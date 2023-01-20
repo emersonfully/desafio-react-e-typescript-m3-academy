@@ -1,5 +1,9 @@
 @import "../../variables.scss";
 
+footer {
+  margin-top: 110px;
+}
+
 .newsletter__container {
   display: flex;
   align-items: center;
@@ -14,6 +18,13 @@
     line-height: 21px;
     letter-spacing: 0.05em;
     font-variant: small-caps;
+
+    @media screen and (min-width: 2500px) {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.05em;
+    }
   }
 
   .newsletter__form__wrapper {
@@ -32,6 +43,13 @@
 
     &::placeholder {
       color: $color-gray-200;
+    }
+
+    @media screen and (min-width: 2500px) {
+      width: 668px;
+      height: 60px;
+      font-size: 28px;
+      line-height: 33px;
     }
 
     @media screen and (max-width: 1024px) {
@@ -55,6 +73,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 
+    @media screen and (min-width: 2500px) {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      width: 246px;
+      height: 60px;
+    }
+
     @media screen and (max-width: 1024px) {
       width: 100%;
       border-radius: 0;
@@ -68,7 +94,7 @@
   align-items: center;
 
   @media screen and (min-width: 1025px) {
-    height: 240px;
+    padding: 50px 0;
   }
 
   @media screen and (max-width: 1024px) {
@@ -90,6 +116,11 @@
     padding-bottom: 10px;
 
     text-transform: uppercase;
+
+    @media screen and (min-width: 2500px) {
+      font-size: 28px;
+      line-height: 33px;
+    }
   }
 
   & a {
@@ -98,6 +129,12 @@
     font-size: 12px;
     line-height: 14px;
     color: $color-black;
+
+    @media screen and (min-width: 2500px) {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+    }
 
     &:hover {
       text-decoration: underline;
@@ -168,13 +205,29 @@ ul {
 }
 
 .wrapper__socialmedia {
-  margin-bottom: 90px;
+  @media screen and (min-width: 2500px) {
+    img {
+      height: 70px;
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    margin-bottom: 90px;
+  }
   @media screen and (max-width: 1024px) {
-    margin-top: 25px;
+    margin: 25px 10px 0;
   }
 }
 
 .socialmedia__link {
+  @media screen and (min-width: 2500px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #303030;
+  }
   @media screen and (max-width: 1024px) {
     display: none;
   }
@@ -207,6 +260,12 @@ ul {
   line-height: 12px;
   text-transform: capitalize;
 
+  @media screen and (min-width: 2500px) {
+    width: 467px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
   @media screen and (min-width: 1025px) {
     position: absolute;
     left: 100px;
@@ -232,10 +291,17 @@ ul {
 
   & img {
     height: 30px;
+    @media screen and (min-width: 2500px) {
+      height: 40px;
+    }
   }
 
   .stamps__vtexPci {
     height: 46px;
+
+    @media screen and (min-width: 2500px) {
+      height: 66px;
+    }
   }
 
   @media screen and (min-width: 1025px) {
@@ -262,10 +328,18 @@ ul {
     line-height: 12px;
     color: $color-white;
     margin-right: 10px;
+
+    @media screen and (min-width: 2500px) {
+      font-size: 20px;
+      line-height: 23px;
+    }
   }
 
   & img {
     height: 16px;
+    @media screen and (min-width: 2500px) {
+      height: 30px;
+    }
   }
 
   @media screen and (min-width: 1025px) {

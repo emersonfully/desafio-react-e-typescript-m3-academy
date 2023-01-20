@@ -112,27 +112,27 @@ const FooterTop = () => {
       <div className={style.wrapper__socialmedia}>
         <ul>
           <li>
-            <a href="https://www.facebook.com">
+            <a href="https://www.facebook.com" target="_blank">
               <img src={facebook} alt="Logo do Facebook" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com">
+            <a href="https://www.instagram.com" target="_blank">
               <img src={instagram} alt="Logo do Instagram" />
             </a>
           </li>
           <li>
-            <a href="https://www.twitter.com">
+            <a href="https://www.twitter.com" target="_blank">
               <img src={twitter} alt="Logo do Twitter" />
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com">
+            <a href="https://www.youtube.com" target="_blank">
               <img src={youtube} alt="Logo do Youtube" />
             </a>
           </li>
           <li>
-            <a href="https://www.linkein.com">
+            <a href="https://www.linkein.com" target="_blank">
               <img src={linkedin} alt="Logo do LinkedIn" />
             </a>
           </li>

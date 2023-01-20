@@ -23,6 +23,10 @@ header {
 .container__logo {
   width: 136px;
 
+  @media screen and (min-width: 2500px) {
+    width: 266px;
+  }
+
   @media screen and (min-width: 1025px) {
     position: absolute;
     left: 100px;
@@ -46,6 +50,10 @@ header {
 
   img {
     width: 20px;
+
+    @media screen and (min-width: 2500px) {
+      width: 36px;
+    }
   }
   @media screen and (max-width: 1024px) {
     width: 100%;
@@ -58,6 +66,14 @@ header {
   height: 32px;
   border: 2px solid $color-white-100;
   border-radius: 5px;
+
+  @media screen and (min-width: 2500px) {
+    width: 516px;
+    height: 57px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+  }
 
   @media screen and (max-width: 1024px) {
     width: 100%;
@@ -85,6 +101,11 @@ header {
 }
 
 .headerTop__login {
+  @media screen and (min-width: 2500px) {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+  }
   @media screen and (max-width: 1024px) {
     display: none;
   }
@@ -92,6 +113,10 @@ header {
 
 .headerTop__cart {
   width: 30px;
+
+  @media screen and (min-width: 2500px) {
+    width: 54px;
+  }
   @media screen and (min-width: 1025px) {
     margin-left: 55px;
   }
@@ -99,11 +124,6 @@ header {
 
 .header__container__nav {
   padding: 14px 0;
-  height: 50px;
-
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
 
   .nav__wrapper {
     margin-left: 100px;
@@ -113,6 +133,16 @@ header {
     color: $color-white;
     margin-right: 50px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 2500px) {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 33px;
+      text-transform: uppercase;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    display: none;
   }
 }
 

@@ -10,11 +10,11 @@ function BackToTopButton() {
 
   return (
     <div className={style.button__container}>
-      <a href="https://web.whatsapp.com/">
-        <img src={whatsapp} alt="" />
+      <a href="https://web.whatsapp.com/" target="_blank">
+        <img src={whatsapp} alt="Logo do Whatsapp" />
       </a>
       <button onClick={scrollToTop}>
-        <img src={arrow} alt="" />
+        <img src={arrow} alt="Botão de voltar ao topo" />
       </button>
     </div>
   );

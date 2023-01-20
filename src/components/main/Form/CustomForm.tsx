@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
+import MaskedInput from "react-text-mask";
 
 import "./CustomForm.scss";
 import FormSchema from "../../../schema/FormSchema";
@@ -25,17 +26,57 @@ const initialValues = {
   cpf: "",
 };
 
+const phoneNumberMask = [
+  "(",
+  /[1-9]/,
+  /\d/,
+  ")",
+  " ",
+  /\d/,
+  /\d/,
+  /\d/,
+  /\d/,
+  /\d/,
+  "-",
+  /\d/,
+  /\d/,
+  /\d/,
+  /\d/,
+];
+
+const cpfMask = [
+  /\d/,
+  /\d/,
+  /\d/,
+  ".",
+  /\d/,
+  /\d/,
+  /\d/,
+  ".",
+  /\d/,
+  /\d/,
+  /\d/,
+  "-",
+  /\d/,
+  /\d/,
+];
+
+const dateMask = [/\d/, /\d/, "/", /\d/, /\d/, "/", /\d/, /\d/, /\d/, /\d/];
+
+// copilot write birthdate field with mask:
+//
+
 const CustomForm = () => {
   const handleFormikSubmit = (values: IFormikValues) => {};
+  console.log("algo");
   return (
     <Formik
       onSubmit={handleFormikSubmit}
       initialValues={initialValues}
       validationSchema={FormSchema}
     >
-      {({ errors, touched }) => (
+      {({ errors, touched, handleChange }) => (
         <Form>
-          <h2>Preencha o Formulário</h2>
           <div className="form-col">
             <label htmlFor="name">Nome </label>
             <Field
@@ -69,10 +110,17 @@ const CustomForm = () => {
           <div className="form-col">
             <label htmlFor="cpf">CPF</label>
             <Field
-              id="cpf"
               name="cpf"
-              className={errors.cpf && touched.cpf && "invalid"}
-              placeholder="999.999.999-99"
+              render={({ field }: any) => (
+                <MaskedInput
+                  {...field}
+                  mask={cpfMask}
+                  onChange={handleChange}
+                  id="cpf"
+                  className={errors.cpf && touched.cpf && "invalid"}
+                  placeholder="999.999.999-99"
+                />
+              )}
             />
             <ErrorMessage
               component="span"
@@ -99,10 +147,17 @@ const CustomForm = () => {
           <div className="form-col">
             <label htmlFor="phone">Seu Telefone</label>
             <Field
-              id="phone"
               name="phone"
-              className={errors.phone && touched.phone && "invalid"}
-              placeholder="(00) 00000-0000"
+              render={({ field }: any) => (
+                <MaskedInput
+                  {...field}
+                  mask={phoneNumberMask}
+                  id="phone"
+                  onChange={handleChange}
+                  className={errors.phone && touched.phone && "invalid"}
+                  placeholder="(00) 00000-0000"
+                />
+              )}
             />
             <ErrorMessage
               component="span"

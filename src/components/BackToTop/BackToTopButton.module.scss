@@ -21,8 +21,23 @@
     background: $color-gray-200;
     color: $color-white;
 
+    @media screen and (min-width: 2500px) {
+      width: 66px;
+      height: 66px;
+    }
+
     & img {
       margin-bottom: 3px;
+
+      @media screen and (min-width: 2500px) {
+        width: 24px;
+      }
+    }
+  }
+
+  img {
+    @media screen and (min-width: 2500px) {
+      width: 66px;
     }
   }
 }
