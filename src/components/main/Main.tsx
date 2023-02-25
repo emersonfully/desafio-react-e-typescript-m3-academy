@@ -7,7 +7,7 @@ import { Title } from "./TitleAndBreadCrumb/Title";
 
 const GenericText = () => (
   <>
-    <p>
+    <p className={style.genericText}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -17,7 +17,7 @@ const GenericText = () => (
       est laborum.
     </p>
     <br />
-    <p>
+    <p className={style.genericText}>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
       inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -28,7 +28,7 @@ const GenericText = () => (
       incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
     </p>
     <br />
-    <p>
+    <p className={style.genericText}>
       Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
       suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
       vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil

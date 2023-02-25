@@ -7,9 +7,7 @@ import { FooterBottom } from "./FooterBottom";
 const Footer = () => {
   return (
     <footer>
-      <hr />
       <FooterNewsletter />
-      <hr />
       <FooterTop />
       <FooterBottom />
     </footer>

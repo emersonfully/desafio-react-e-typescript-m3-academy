@@ -11,10 +11,10 @@ const FooterNewsletter = () => {
         <input
           className={style.newsletter__input}
           type="text"
-          placeholder="Buscar..."
+          placeholder="E-mail"
         />
         <button className={style.newsletter__submitButton} type="submit">
-          Enviar
+          ENVIAR
         </button>
       </div>
     </div>

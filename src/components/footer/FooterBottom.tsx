@@ -47,13 +47,21 @@ const FooterBottom = () => {
       </ul>
       <ul className={style.stamps__developedBy}>
         <li>
-          <a href="https://vtex.com/br-pt/">
+          <a
+            className={style.developedBy__link}
+            href="https://vtex.com/br-pt/"
+            target="_blank"
+          >
             <span>Powered By</span>
             <img src={logoVTEX} alt="" />
           </a>
         </li>
         <li>
-          <a href="https://m3ecommerce.com/">
+          <a
+            className={style.developedBy__link}
+            href="https://m3ecommerce.com/"
+            target="_blank"
+          >
             <span>Developed By</span>
             <img src={logoM3} alt="" />
           </a>

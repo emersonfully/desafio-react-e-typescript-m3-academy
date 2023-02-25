@@ -172,7 +172,7 @@ const CustomForm = () => {
               id="instagram"
               name="instagram"
               className={errors.instagram && touched.instagram && "invalid"}
-              placeholder="@instagram"
+              placeholder="@seuuser"
             />
             <ErrorMessage
               component="span"

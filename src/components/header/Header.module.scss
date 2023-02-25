@@ -78,6 +78,7 @@ header {
   @media screen and (max-width: 1024px) {
     width: 100%;
     margin-bottom: 25px;
+    height: 36px;
   }
 }
 
@@ -131,7 +132,7 @@ header {
 
   & a {
     color: $color-white;
-    margin-right: 50px;
+    margin-right: 55px;
     text-transform: uppercase;
 
     @media screen and (min-width: 2500px) {
